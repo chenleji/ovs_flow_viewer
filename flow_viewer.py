@@ -1,4 +1,4 @@
-from pyExcelerator import *
+from xlwt import *
 from json import *
 
 place_dict = {"cookie": 1,
@@ -47,9 +47,10 @@ def convert_tags(line):
 def write_excel(file_out, items):
     w = Workbook()
     ws = w.add_sheet('Open Flow')
+    style = easyxf('font: bold on, colour red; pattern: pattern solid, fore-colour grey25')
     line = 0
     for tag in place_dict:
-        ws.write(line, place_dict[tag]-1, tag)
+        ws.write(line, place_dict[tag]-1, tag, style)
     line += 1
     for item in items:
         for tag in item:
