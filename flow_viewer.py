@@ -6,17 +6,19 @@ place_dict = {"cookie": 1,
               "table": 3,
               "n_packets": 4,
               "n_bytes": 5,
-              "priority": 6,
-              "in_port": 7,
-              "dl_src": 8,
-              "dl_dst": 9,
-              "nw_src": 10,
-              "nw_dst": 11,
-              "protocol": 12,
-              "tp_src": 13,
-              "tp_dst": 14,
-              "actions": 15
+              "hard_age": 6,
+              "priority": 7,
+              "in_port": 8,
+              "dl_src": 9,
+              "dl_dst": 10,
+              "nw_src": 11,
+              "nw_dst": 12,
+              "protocol": 13,
+              "tp_src": 14,
+              "tp_dst": 15,
+              "actions": 16
               }
+
 
 def convert_tags(line):
     entry = {}
