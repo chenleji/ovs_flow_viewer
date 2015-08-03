@@ -3,10 +3,10 @@ from json import *
 
 place_dict = {"cookie": 1,
               "duration": 2,
-              "table": 3,
-              "n_packets": 4,
-              "n_bytes": 5,
-              "hard_age": 6,
+              "n_packets": 3,
+              "n_bytes": 4,
+              "hard_age": 5,
+              "table": 6,
               "priority": 7,
               "in_port": 8,
               "dl_src": 9,
@@ -74,4 +74,4 @@ def main(file_in, file_out):
         fd.close()
 
 if __name__ == '__main__':
-    main('C:\Users\henry\Desktop\origin.txt', 'C:\Users\henry\Desktop\openflow')
+    main('origin.txt', 'openflow')
